@@ -1,0 +1,226 @@
+/* 全局样式 */
+.dashboard-container {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.content-wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(90deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  margin-right: 16px;
+}
+
+.nav-tabs-custom .ant-tabs-nav {
+  background: linear-gradient(90deg, #1a1a2e 0%, #16213e 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 0;
+}
+
+.nav-tabs-custom .ant-tabs-tab {
+  color: rgba(255, 255, 255, 0.65) !important;
+  font-size: 16px;
+  padding: 12px 24px !important;
+  margin: 0 !important;
+  border: none !important;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.nav-tabs-custom .ant-tabs-tab:hover {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-tabs-custom .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #ffffff !important;
+  text-shadow: 0 0 10px rgba(24, 144, 255, 0.5);
+}
+
+.nav-tabs-custom .ant-tabs-ink-bar {
+  background: #1890ff !important;
+  box-shadow: 0 0 15px #1890ff;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr 360px;
+  gap: 24px;
+  padding: 24px;
+}
+
+.sentiment-panel,
+.main-dashboard,
+.portfolio-panel {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  border: 1px solid #e8e8e8;
+}
+
+/* 新的性能分析头部样式 */
+.performance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white;
+}
+
+.performance-title {
+  display: flex;
+  align-items: center;
+}
+
+.performance-title .ant-typography {
+  color: white !important;
+  margin: 0 !important;
+}
+
+.strategy-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.strategy-toggle .ant-btn {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.strategy-toggle .ant-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.strategy-toggle .ant-btn-primary {
+  background: rgba(255, 255, 255, 0.9);
+  color: #1890ff;
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+.strategy-toggle .ant-btn-primary:hover {
+  background: white;
+  color: #1890ff;
+  border-color: white;
+}
+
+/* 突出显示主策略行 */
+.highlight-row {
+  background-color: #e6f7ff !important;
+  border: 2px solid #1890ff;
+  border-radius: 4px;
+}
+
+.highlight-row:hover {
+  background-color: #bae7ff !important;
+}
+
+.highlight-row td {
+  font-weight: bold;
+  color: #1890ff;
+}
+
+/* 图表容器样式 */
+.recharts-legend-wrapper {
+  margin-top: 20px !important;
+}
+
+.recharts-legend-item-text {
+  font-weight: bold !important;
+}
+
+/* 自定义工具提示样式 */
+.custom-tooltip {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid #ccc !important;
+  border-radius: 6px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+
+.news-item {
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.news-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.strategy-content {
+  padding: 30px;
+}
+
+.ai-chat-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.chat-messages {
+  height: 400px;
+  overflow-y: auto;
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.chat-input-area {
+  padding: 20px;
+  background: #fafafa;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .performance-header {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .strategy-toggle {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .strategy-toggle {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .strategy-toggle .ant-btn {
+    width: 100%;
+  }
+}

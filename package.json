@@ -11,6 +11,9 @@
   "keywords": ["quantitative investment", "dashboard", "fintech"],
   "author": "ChanTech",
   "license": "MIT",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

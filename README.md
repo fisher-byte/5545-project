@@ -1,164 +1,164 @@
-# ChanTech 量化投资仪表盘
 
-一个专业的量化投资管理平台，提供实时的投资组合监控、市场情绪分析和AI驱动的策略问答功能。
+# ChanTech-Quant-Investment-Dashboard
 
-## 🚀 功能特性
+A professional quantitative investment management platform that provides real-time portfolio monitoring, market sentiment analysis, and AI-driven strategy Q&A functions.
 
-### 📊 投资仪表盘
-- **实时业绩监控**: 展示累积收益率、超额收益和夏普比率
-- **资产配置管理**: 可视化当前投资组合配置
-- **智能再平衡**: 自动和手动再平衡功能
-- **业绩对比**: 与基准指数的详细对比分析
+## 🚀 Features
 
-### 📈 市场情绪分析
-- **情绪指数**: 实时市场情绪评分和可视化
-- **新闻监控**: 基于Gemini的关键词提取和情绪分析
-- **市场状况**: 综合市场条件分析图表
+### 📊 Investment Dashboard
+- **Real-time Performance Monitoring**: Displays cumulative return, excess return, and Sharpe ratio.
+- **Asset Allocation Management**: Visualizes the current investment portfolio allocation.
+- **Smart Rebalancing**: Automatic and manual rebalancing functions.
+- **Performance Comparison**: Detailed comparison and analysis with benchmark indices.
 
-### 🔍 策略深度分析
-- **策略架构**: 详细的投资策略说明和技术架构
-- **执行流程**: 完整的策略执行时间线
-- **风险管理**: 多层次风险控制体系介绍
-- **业绩归因**: 详细的收益来源分析
+### 📈 Market Sentiment Analysis
+- **Sentiment Index**: Real-time market sentiment score and visualization.
+- **News Monitoring**: Keyword extraction and sentiment analysis based on Gemini.
+- **Market Conditions**: Comprehensive analysis chart of market conditions.
 
-### 🤖 AI问答助手
-- **智能问答**: 基于策略的AI助手，回答投资相关问题
-- **实时交互**: 流畅的对话体验
-- **预设问题**: 常见问题快速访问
+### 🔍 In-depth Strategy Analysis
+- **Strategy Architecture**: Detailed explanation of investment strategies and technical architecture.
+- **Execution Flow**: Complete timeline of strategy execution.
+- **Risk Management**: Introduction to a multi-level risk control system.
+- **Performance Attribution**: Detailed analysis of the sources of returns.
 
-## 🛠️ 技术栈
+### 🤖 AI Q&A Assistant
+- **Intelligent Q&A**: AI assistant based on strategies to answer investment-related questions.
+- **Real-time Interaction**: Smooth conversational experience.
+- **Preset Questions**: Quick access to frequently asked questions.
 
-- **前端框架**: React 18
-- **UI组件库**: Ant Design 5
-- **图表库**: Recharts
-- **路由**: React Router DOM
-- **样式**: Styled Components + CSS
-- **构建工具**: Webpack 5
-- **包管理**: npm
+## 🛠️ Tech Stack
 
-## 📦 安装和运行
+- **Frontend Framework**: React 18
+- **UI Component Library**: Ant Design 5
+- **Charting Library**: Recharts
+- **Routing**: React Router DOM
+- **Styling**: Styled Components + CSS
+- **Build Tool**: Webpack 5
+- **Package Management**: npm
 
-### 环境要求
+## 📦 Installation and Running
+
+### Prerequisites
 - Node.js >= 14.0.0
 - npm >= 6.0.0
 
-### 安装依赖
+### Install Dependencies
 ```bash
 npm install
 ```
 
-### 开发模式
+### Development Mode
 ```bash
 npm run dev
 ```
-应用将在 http://localhost:3000 启动
+The application will start at http://localhost:3000
 
-### 生产构建
+### Production Build
 ```bash
 npm run build
 ```
 
-## 📁 项目结构
+## 📁 Project Structure
 
 ```
 chantech-quant-dashboard/
 ├── public/
-│   └── index.html          # HTML模板
+│   └── index.html          # HTML template
 ├── src/
-│   ├── components/         # React组件
-│   │   ├── AIChat.js      # AI问答组件
-│   │   ├── SentimentPanel.js  # 情绪分析面板
-│   │   └── PortfolioPanel.js  # 投资组合面板
-│   ├── pages/             # 页面组件
-│   │   ├── Dashboard.js   # 主仪表盘页面
-│   │   └── StrategyDeepDive.js  # 策略深度分析页面
-│   ├── styles/            # 样式文件
-│   │   └── global.css     # 全局样式
-│   ├── App.js             # 应用主组件
-│   └── index.js           # 应用入口
-├── package.json           # 项目配置
-├── webpack.config.js      # Webpack配置
-└── README.md             # 项目说明
+│   ├── components/         # React components
+│   │   ├── AIChat.js      # AI Q&A component
+│   │   ├── SentimentPanel.js  # Sentiment analysis panel
+│   │   └── PortfolioPanel.js  # Investment portfolio panel
+│   ├── pages/             # Page components
+│   │   ├── Dashboard.js   # Main dashboard page
+│   │   └── StrategyDeepDive.js  # In-depth strategy analysis page
+│   ├── styles/            # Style files
+│   │   └── global.css     # Global styles
+│   ├── App.js             # Main application component
+│   └── index.js           # Application entry point
+├── package.json           # Project configuration
+├── webpack.config.js      # Webpack configuration
+└── README.md             # Project description
 ```
 
-## 🎨 设计亮点
+## 🎨 Design Highlights
 
-### 现代化UI
-- 渐变背景和玻璃态设计
-- 响应式布局，支持多设备访问
-- 专业的金融数据可视化
+### Modern UI
+- Gradient background and glassmorphism design.
+- Responsive layout, supporting access from multiple devices.
+- Professional financial data visualization.
 
-### 用户体验
-- 直观的导航和信息层次
-- 实时数据更新
-- 流畅的交互动画
+### User Experience
+- Intuitive navigation and information hierarchy.
+- Real-time data updates.
+- Smooth interactive animations.
 
-### 数据可视化
-- 集成实际的图表图片展示
-- 多维度数据展示
-- 清晰的指标卡片设计
+### Data Visualization
+- Integration of actual chart images for display.
+- Multi-dimensional data presentation.
+- Clear indicator card design.
 
-## 📊 核心模块说明
+## 📊 Core Module Description
 
-### 投资仪表盘
-集中展示投资组合的关键指标，包括：
-- 累积收益率趋势
-- 风险收益分析
-- 业绩总结报告
-- 实时资产配置
+### Investment Dashboard
+Centralized display of key portfolio indicators, including:
+- Cumulative return trend
+- Risk-return analysis
+- Performance summary report
+- Real-time asset allocation
 
-### 情绪分析
-通过多源数据分析市场情绪：
-- 综合情绪指数计算
-- 新闻情绪关键词提取
-- 市场条件实时监控
+### Sentiment Analysis
+Analysis of market sentiment through multi-source data:
+- Comprehensive sentiment index calculation
+- Keyword extraction from news sentiment
+- Real-time monitoring of market conditions
 
-### 策略分析
-深入解析量化投资策略：
-- 投资理念和原则
-- 技术架构详解
-- 风险管理体系
-- 业绩归因分析
+### Strategy Analysis
+In-depth analysis of quantitative investment strategies:
+- Investment philosophy and principles
+- Detailed technical architecture
+- Risk management system
+- Performance attribution analysis
 
-### AI助手
-提供智能化的投资咨询：
-- 策略相关问题解答
-- 实时交互体验
-- 个性化建议支持
+### AI Assistant
+Provides intelligent investment consulting:
+- Answers to strategy-related questions
+- Real-time interactive experience
+- Personalized suggestion support
 
-## 🔧 自定义配置
+## 🔧 Custom Configuration
 
-### 修改图片资源
-项目使用Cloudinary托管的图片资源，如需更换：
-1. 更新 `图片URL.txt` 中的链接
-2. 在相应组件中更新图片路径
+### Modifying Image Resources
+The project uses image resources hosted on Cloudinary. To replace them:
+1. Update the links in `Image URLs.txt`.
+2. Update the image paths in the corresponding components.
 
-### 添加新功能
-1. 在 `src/components/` 创建新组件
-2. 在相应页面中引入和使用
-3. 更新路由配置（如需要）
+### Adding New Features
+1. Create a new component in `src/components/`.
+2. Import and use it in the corresponding page.
+3. Update the routing configuration (if necessary).
 
-### 样式定制
-- 修改 `src/styles/global.css` 调整全局样式
-- 在组件中使用内联样式进行局部调整
+### Style Customization
+- Modify `src/styles/global.css` to adjust global styles.
+- Use inline styles in components for local adjustments.
 
-## 📈 未来规划
+## 📈 Future Plans
 
-- [ ] 集成真实数据API
-- [ ] 添加更多图表类型
-- [ ] 优化移动端体验
-- [ ] 增加用户权限管理
-- [ ] 集成实时交易功能
+- [ ] Integrate real data APIs
+- [ ] Add more chart types
+- [ ] Optimize mobile experience
+- [ ] Add user permission management
+- [ ] Integrate real-time trading functions
 
-## 🤝 贡献指南
+## 🤝 Contribution Guidelines
 
-欢迎提交Issue和Pull Request来改进项目！
+Feel free to submit Issues and Pull Requests to improve the project!
 
-## 📄 许可证
+## 📄 License
 
 MIT License
 
 ---
 
-© 2024 ChanTech. 专业量化投资解决方案提供商。
-
+© 2024 ChanTech. Provider of professional quantitative investment solutions.
